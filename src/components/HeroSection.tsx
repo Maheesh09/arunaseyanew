@@ -48,9 +48,9 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-studio-white mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-          Your Memories.
+          Capture Every Moment.
           <br />
-          <span className="text-primary">Professionally Preserved.</span>
+          <span className="text-primary">Cherish It Forever.</span>
         </h1>
         <p className="font-body text-lg md:text-xl text-studio-white/90 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
           Premium photography services for all your personal and professional needs. 
