@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'body': ['Lora', 'serif'],
+        'display': ['Rubik', 'sans-serif'],
+        'body': ['Rubik', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
