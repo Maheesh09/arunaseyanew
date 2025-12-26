@@ -26,7 +26,7 @@ const GallerySection = () => {
     <section id="gallery" className="section-padding bg-background">
       <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-primary font-body font-medium mb-2">Our Work</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Sample Gallery
@@ -58,7 +58,7 @@ const GallerySection = () => {
           {filteredImages.map((image, index) => (
             <div
               key={index}
-              className="group relative rounded-xl overflow-hidden aspect-[4/3] cursor-pointer"
+              className="group relative rounded-xl overflow-hidden aspect-[4/3] cursor-pointer border border-border"
             >
               <img
                 src={image.src}

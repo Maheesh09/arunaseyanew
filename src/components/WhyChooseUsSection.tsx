@@ -28,7 +28,7 @@ const WhyChooseUsSection = () => {
     <section className="section-padding bg-studio-light">
       <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-primary font-body font-medium mb-2">Why Us</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Why Choose Studio Arunaseya
@@ -43,7 +43,7 @@ const WhyChooseUsSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-xl bg-background shadow-card card-hover"
+              className="text-center p-6 rounded-xl bg-background border border-border shadow-card card-hover"
             >
               <div className="mb-4 p-4 rounded-full bg-primary/10 w-fit mx-auto">
                 <feature.icon className="w-7 h-7 text-primary" />
