@@ -6,7 +6,7 @@ const SEOHead = () => {
     "@type": "LocalBusiness",
     "name": "Studio Arunaseya",
     "image": "",
-    "description": "Professional photography studio in Kelaniya, Sri Lanka. Passport photos, photo printing, framing, and restoration services.",
+    "description": "Professional photography studio in Kelaniya, Sri Lanka. Passport photos, photo printing, framing, and restoration services, Identitiy Card Photos.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "17, Eksath Mawatha, Sinharamulla",

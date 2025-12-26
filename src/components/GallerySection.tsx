@@ -1,17 +1,20 @@
 import { useState } from "react";
 import heroStudio from "@/assets/hero-studio.jpg";
-import heroPortrait from "@/assets/hero-portrait.jpg";
 import heroPrinting from "@/assets/hero-printing.jpg";
+import heroPortrait from "@/assets/arunaseya.png";
+import image1 from "@/assets/frames1.png";
+import image2 from "@/assets/printer.png";
+import image3 from "@/assets/printing2.png";
 
 const categories = ["All", "Portrait", "Printing", "Framing", "Studio"];
 
 const galleryImages = [
-  { src: heroPortrait, category: "Portrait", alt: "Portrait Photography" },
   { src: heroPrinting, category: "Printing", alt: "Photo Printing" },
   { src: heroStudio, category: "Studio", alt: "Studio Setup" },
-  { src: heroPortrait, category: "Portrait", alt: "Professional Portrait" },
-  { src: heroPrinting, category: "Framing", alt: "Photo Framing" },
-  { src: heroStudio, category: "Studio", alt: "Photography Studio" },
+  { src: heroPortrait, category: "Studio", alt: "Portrait Photography" },
+  { src: image1, category: "Framing", alt: "Photo Framing" },
+  { src: image2, category: "Printing", alt: "Photo Printing Service" },
+  { src: image3, category: "Printing", alt: "Photo Printing Service" },
 ];
 
 const GallerySection = () => {

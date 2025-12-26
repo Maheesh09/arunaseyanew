@@ -1,5 +1,5 @@
 import { Award, Camera, Heart, Clock } from "lucide-react";
-import heroStudio from "@/assets/hero-studio.jpg";
+import heroStudio from "@/assets/arunaseya.png";
 
 const AboutSection = () => {
   const highlights = [

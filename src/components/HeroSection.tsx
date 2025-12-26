@@ -2,12 +2,11 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroStudio from "@/assets/hero-studio.jpg";
-import heroPortrait from "@/assets/hero-portrait.jpg";
 import heroPrinting from "@/assets/hero-printing.jpg";
+import heroPortrait from "@/assets/arunaseya.png";
 
 const slides = [
   { image: heroStudio, alt: "Professional Photography Studio" },
-  { image: heroPortrait, alt: "Portrait Photography Session" },
   { image: heroPrinting, alt: "Premium Photo Printing" },
 ];
 
@@ -50,7 +49,7 @@ const HeroSection = () => {
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-studio-white mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
           Capture Every Moment.
           <br />
-          <span className="text-primary">Cherish It Forever.</span>
+          <span className="font-extrabold" style={{ color: "#ff174d", textShadow: "1px 1px 4px rgba(0,0,0,0.8), 4px 4px 6px rgba(0,0,0,0.6)" }}>Cherish It Forever.</span>
         </h1>
         <p className="font-body text-lg md:text-xl text-studio-white/90 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
           Premium photography services for all your personal and professional needs. 
