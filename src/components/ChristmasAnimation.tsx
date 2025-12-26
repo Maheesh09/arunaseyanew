@@ -18,7 +18,7 @@ const ChristmasAnimation = () => {
       id: i,
       left: Math.random() * 100,
       animationDuration: 3 + Math.random() * 4, // 3-7 seconds
-      size: 4 + Math.random() * 6, // 4-10px
+      size: 12 + Math.random() * 6, // 4-10px
       opacity: 0.3 + Math.random() * 0.7, // 0.3-1
       delay: Math.random() * 2, // 0-2 seconds
     }));
