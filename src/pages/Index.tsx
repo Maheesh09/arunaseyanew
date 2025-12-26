@@ -8,11 +8,13 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import ChristmasAnimation from "@/components/ChristmasAnimation";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead />
+      <ChristmasAnimation />
       <Navbar />
       <main>
         <HeroSection />
