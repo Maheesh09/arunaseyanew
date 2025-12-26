@@ -51,7 +51,7 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-background">
       <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-primary font-body font-medium mb-2">Get In Touch</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Visit Our Studio
@@ -61,7 +61,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact Info */}
           <div className="space-y-6">
             {contactInfo.map((item, index) => (
@@ -99,7 +99,7 @@ const ContactSection = () => {
             </a>
 
             {/* Map */}
-            <div className="rounded-xl overflow-hidden shadow-card h-[250px] mt-6">
+            <div className="rounded-xl overflow-hidden shadow-card border border-border h-[250px] mt-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6888953462714!2d79.90652047573!3d6.937689918323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2576f1a2ba98d%3A0x5c9a4b5e8b7a5d0a!2sKelaniya%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1703000000000!5m2!1sen!2sus"
                 width="100%"
@@ -114,7 +114,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-studio-light rounded-2xl p-8">
+          <div className="bg-studio-light rounded-2xl p-8 border border-border">
             <h3 className="font-display text-xl font-semibold text-foreground mb-6">
               Send Us a Message
             </h3>

@@ -12,10 +12,10 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-padding bg-studio-light">
       <div className="container-narrow">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-hover">
+            <div className="relative rounded-2xl overflow-hidden shadow-hover border border-border">
               <img
                 src={heroStudio}
                 alt="Studio Arunaseya Workspace"
@@ -55,7 +55,7 @@ const AboutSection = () => {
               {highlights.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-background shadow-card"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-background border border-border shadow-card"
                 >
                   <div className="p-2 rounded-lg bg-primary/10">
                     <item.icon className="w-5 h-5 text-primary" />

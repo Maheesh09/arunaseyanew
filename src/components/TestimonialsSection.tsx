@@ -54,7 +54,7 @@ const TestimonialsSection = () => {
     <section className="section-padding bg-studio-light">
       <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-primary font-body font-medium mb-2">Testimonials</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             What Our Customers Say
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
 
         {/* Testimonial Carousel */}
         <div className="relative max-w-3xl mx-auto">
-          <div className="bg-background rounded-2xl p-8 md:p-12 shadow-card">
+          <div className="bg-background rounded-2xl p-8 md:p-12 shadow-card border border-border">
             <Quote className="w-10 h-10 text-primary/20 mb-6" />
             
             <div className="min-h-[150px] flex flex-col justify-center">

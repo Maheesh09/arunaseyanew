@@ -52,7 +52,7 @@ const ServicesSection = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-primary font-body font-medium mb-2">What We Offer</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Photography Services
@@ -68,7 +68,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group bg-card border-border/50 hover:border-primary/30 card-hover cursor-pointer"
+              className="group bg-card border border-border hover:border-primary/50 card-hover cursor-pointer"
             >
               <CardContent className="p-6">
                 <div className="mb-4 p-3 rounded-xl bg-primary/10 w-fit group-hover:bg-primary/20 transition-colors">
