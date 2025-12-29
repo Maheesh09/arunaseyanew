@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroStudio from "@/assets/hero-studio.jpg";
 import heroPrinting from "@/assets/hero-printing.jpg";
-import heroPortrait from "@/assets/arunaseya.png";
+import logo from "@/assets/logo.png";
 
 const slides = [
   { image: heroStudio, alt: "Professional Photography Studio" },
@@ -21,10 +21,14 @@ const HeroSection = () => {
   }, []);
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  const prevSlide = () =>
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Slideshow */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -46,20 +50,44 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-studio-white mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-          Capture Every Moment.
+        <h1
+          className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-studio-white mb-6 animate-fade-up opacity-0"
+          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
+        >
           <br />
-          <span className="font-extrabold" style={{ color: "#ff174d", textShadow: "1px 1px 4px rgba(0,0,0,0.8), 4px 4px 6px rgba(0,0,0,0.6)" }}>Cherish It Forever.</span>
+          <span
+            className="font-extrabold"
+            style={{
+              color: "white",
+              textShadow:
+                "1px 1px 4px rgba(0,0,0,0.8), 4px 4px 6px rgba(0,0,0,0.6)",
+            }}
+          >
+            Studio Arunaseya
+          </span>
         </h1>
-        <p className="font-body text-lg md:text-xl text-studio-white/90 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-          Premium photography services for all your personal and professional needs. 
-          Trusted by thousands in Kelaniya for over 15 years.
+        <p
+          className="font-body text-lg md:text-xl text-studio-white/90 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0"
+          style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+        >
+          Premium photography services for all your personal and professional
+          needs. Trusted by thousands in Kelaniya for over 15 years.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-          <Button size="lg" className="text-base px-8 bg-primary hover:bg-primary/90">
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0"
+          style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+        >
+          <Button
+            size="lg"
+            className="text-base px-8 bg-primary hover:bg-primary/90"
+          >
             <a href="#services">Our Services</a>
           </Button>
-          <Button size="lg" variant="secondary" className="text-base px-8 bg-studio-white/90 text-foreground hover:bg-studio-white border-0">
+          <Button
+            size="lg"
+            variant="secondary"
+            className="text-base px-8 bg-studio-white/90 text-foreground hover:bg-studio-white border-0"
+          >
             <a href="#contact">Contact Us</a>
           </Button>
         </div>

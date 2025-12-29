@@ -49,7 +49,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Phone CTA */}
+          {/* Desktop Phone CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+94702284833"
@@ -63,14 +63,23 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Phone CTA & Menu Button */}
+          <div className="md:hidden flex items-center gap-3">
+            <a
+              href="tel:+94702284833"
+              className="flex items-center gap-1 text-xs font-medium text-primary"
+            >
+              <Phone className="w-4 h-4" />
+              <span>+94 70 228 4833</span>
+            </a>
+            <button
+              className="p-2"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -87,13 +96,6 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="tel:+94702284833"
-                className="flex items-center gap-2 text-base font-medium text-primary py-2"
-              >
-                <Phone className="w-4 h-4" />
-                +94 70 228 4833
-              </a>
             </div>
           </div>
         )}

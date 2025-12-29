@@ -12,14 +12,71 @@ const ContactSection = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you soon. Thank you for contacting us!",
-    });
-    setFormData({ name: "", phone: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const webhookUrl = "http://localhost:5678/webhook-test/22b568fc-b894-4b32-b75e-583f87d4aa72";
+      
+      // Prepare headers with authentication if needed
+      const headers: HeadersInit = {
+        "Content-Type": "application/json",
+        // Add authentication headers here if required by your webhook
+        // Examples:
+        // "Authorization": "Bearer YOUR_TOKEN_HERE",
+        // "X-API-Key": "YOUR_API_KEY_HERE",
+        // "Authorization": "Basic " + btoa("username:password"),
+      };
+      
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Webhook error:", response.status, errorText);
+        
+        if (response.status === 401) {
+          throw new Error("Authentication failed. Please check if the webhook requires authentication credentials.");
+        }
+        if (response.status === 404) {
+          throw new Error("Webhook endpoint not found. Please check if the server is running.");
+        }
+        throw new Error(`Server returned ${response.status}: ${errorText || "Unknown error"}`);
+      }
+
+      const responseData = await response.json().catch(() => ({}));
+      console.log("Webhook response:", responseData);
+
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you soon. Thank you for contacting us!",
+      });
+      setFormData({ name: "", phone: "", message: "" });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      
+      const errorMessage = error instanceof Error 
+        ? error.message 
+        : "Failed to send message. Please check your connection and try again.";
+      
+      toast({
+        title: "Error",
+        description: errorMessage,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -160,8 +217,8 @@ const ContactSection = () => {
                   className="bg-background resize-none"
                 />
               </div>
-              <Button type="submit" className="w-full" size="lg">
-                Send Message
+              <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
