@@ -19,7 +19,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const webhookUrl = "http://localhost:5678/webhook-test/22b568fc-b894-4b32-b75e-583f87d4aa72";
+      const webhookUrl = "http://localhost:5678/webhook-test/89c47793-2696-40be-b422-631324284155";
       
       // Prepare headers with authentication if needed
       const headers: HeadersInit = {
