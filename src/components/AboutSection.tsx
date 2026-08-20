@@ -60,7 +60,7 @@ const AboutSection = () => {
             
             <p className="font-body text-muted-foreground leading-relaxed">
               Studio Arunaseya is a trusted photography studio with over a decade of experience 
-              serving the Kelaniya community. We combine traditional craftsmanship with modern 
+              serving the community. We combine traditional craftsmanship with modern 
               technology to deliver exceptional results for every customer.
             </p>
             
