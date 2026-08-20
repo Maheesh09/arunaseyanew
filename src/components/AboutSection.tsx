@@ -4,7 +4,7 @@ import newBranch from "@/assets/arunaseya_new_branch.jpeg";
 
 const AboutSection = () => {
   const highlights = [
-    { icon: Award, text: "15+ Years of Excellence" },
+    { icon: Award, text: "30+ Years of Excellence" },
     { icon: Camera, text: "Professional Equipment" },
     { icon: Heart, text: "Customer Satisfaction" },
     { icon: Clock, text: "Fast Turnaround" },
@@ -44,7 +44,7 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 md:right-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-hover whitespace-nowrap">
-              <p className="font-display text-3xl font-bold">15+</p>
+              <p className="font-display text-3xl font-bold">30+</p>
               <p className="font-body text-sm">Years of Excellence</p>
             </div>
           </div>
