@@ -1,5 +1,6 @@
-import { Award, Camera, Heart, Clock } from "lucide-react";
+import { Award, Camera, Heart, Clock, MapPin } from "lucide-react";
 import heroStudio from "@/assets/arunaseya.png";
+import newBranch from "@/assets/arunaseya_new_branch.jpeg";
 
 const AboutSection = () => {
   const highlights = [
@@ -15,15 +16,34 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-hover border border-border">
-              <img
-                src={heroStudio}
-                alt="Studio Arunaseya Workspace"
-                className="w-full h-[400px] object-cover"
-              />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="relative rounded-2xl overflow-hidden shadow-hover border border-border">
+                <img
+                  src={heroStudio}
+                  alt="Studio Arunaseya Workspace"
+                  className="w-full h-[360px] md:h-[400px] object-cover"
+                />
+                <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full bg-background/90 px-3 py-1 font-body text-xs font-semibold text-foreground shadow-card">
+                  <MapPin className="h-3.5 w-3.5 text-primary" />
+                  Kelaniya
+                </span>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-hover border border-border">
+                <img
+                  src={newBranch}
+                  alt="Studio Arunaseya new branch storefront"
+                  className="w-full h-[360px] md:h-[400px] object-cover"
+                />
+                <span className="absolute top-3 left-3 rounded-full bg-background/90 px-3 py-1 font-body text-xs font-semibold text-foreground shadow-card">
+                  New Branch
+                </span>
+                <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full bg-background/90 px-3 py-1 font-body text-xs font-semibold text-foreground shadow-card">
+                  <MapPin className="h-3.5 w-3.5 text-primary" />
+                  Himbutana
+                </span>
+              </div>
             </div>
-            {/* Floating Badge */}
-            <div className="absolute -bottom-6 -right-6 md:right-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-hover">
+            <div className="absolute -bottom-6 -right-6 md:right-6 bg-primary text-primary-foreground px-6 py-4 rounded-xl shadow-hover whitespace-nowrap">
               <p className="font-display text-3xl font-bold">15+</p>
               <p className="font-body text-sm">Years of Excellence</p>
             </div>
