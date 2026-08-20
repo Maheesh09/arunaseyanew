@@ -11,8 +11,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-studio-white">
-      <div className="max-w-6xl mx-auto px-4 md:px-8 py-12">
+    <footer className="relative overflow-hidden bg-foreground text-studio-white">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-5 z-0 select-none whitespace-nowrap text-center font-display text-[clamp(3rem,12vw,15rem)] font-bold leading-none tracking-[0.04em] text-studio-white/[0.1]">
+        ARUNASEYA
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 py-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
