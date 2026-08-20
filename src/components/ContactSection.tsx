@@ -42,8 +42,13 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Address",
+      title: "Kelaniya Branch",
       content: "17, Eksath Mawatha, Sinharamulla, Kelaniya, 11600",
+    },
+    {
+      icon: MapPin,
+      title: "Himbutana Branch",
+      content: "378/5, Udumulla, Mulleriyawa",
     },
     {
       icon: Phone,
@@ -115,18 +120,38 @@ const ContactSection = () => {
               Chat on WhatsApp
             </a>
 
-            {/* Map */}
-            <div className="rounded-xl overflow-hidden shadow-card border border-border h-[250px] mt-6">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4848389927997!2d79.91412607568142!3d6.951992818034251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2582620d31761%3A0xc696b81a1da9d95e!2sStudio%20Arunaseya!5e0!3m2!1sen!2slk!4v1766765739310!5m2!1sen!2slk"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Studio Arunaseya Location"
-              />
+            {/* Branch Maps */}
+            <div className="grid sm:grid-cols-2 gap-4 mt-6">
+              <div>
+                <h3 className="font-display font-semibold text-foreground mb-2">Kelaniya Branch</h3>
+                <div className="rounded-xl overflow-hidden shadow-card border border-border h-[250px]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4848389927997!2d79.91412607568142!3d6.951992818034251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2582620d31761%3A0xc696b81a1da9d95e!2sStudio%20Arunaseya!5e0!3m2!1sen!2slk!4v1766765739310!5m2!1sen!2slk"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Studio Arunaseya Kelaniya Location"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3 className="font-display font-semibold text-foreground mb-2">Himbutana Branch</h3>
+                <div className="rounded-xl overflow-hidden shadow-card border border-border h-[250px]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.54748004355366!2d79.94258735462729!3d6.919307799224116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2579665de5b69%3A0x28eeecae57f7dbd!2sStudio%20Arunaseya%20-%20Himbutana!5e0!3m2!1sen!2slk!4v1787203494275!5m2!1sen!2slk"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title="Studio Arunaseya Himbutana Location"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
