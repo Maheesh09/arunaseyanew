@@ -23,7 +23,7 @@ const Footer = () => {
             <img src={logo} alt="Studio Arunaseya" className="h-16 w-auto brightness-0 invert" />
             <p className="font-body text-sm text-studio-white/70 leading-relaxed">
               Your trusted photography studio in Kelaniya, Sri Lanka. 
-              Preserving memories since 2009.
+              Preserving memories since 1972.
             </p>
           </div>
 
